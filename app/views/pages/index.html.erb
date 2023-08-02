@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="card">
+      <div class="card-body">
+        <h1 class="card-title text-center">Personajes de Harry Potter</h1>
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Locación</th>
+              <th>Casa</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @characters.each do |character| %>
+              <tr>
+                <td><%= character.name %></td>
+                <td><%= character.location %></td>
+                <td><%= character.house %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+

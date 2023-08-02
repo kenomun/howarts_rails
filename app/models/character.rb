@@ -10,4 +10,5 @@
 #  updated_at :datetime         not null
 #
 class Character < ApplicationRecord
+    validates_presence_of :name, :location, :house
 end
